@@ -24,6 +24,18 @@ const LoginForm = () => {
           {loading && (
             <CircularProgress sx={{ marginRight: 1 }} size={18} thickness={2} />
           )}
+          Login With LINE
+        </Button>
+        <Button
+          type="submit"
+          color="primary"
+          onClick={handleLogin}
+          disabled={loading}
+          fullWidth
+        >
+          {loading && (
+            <CircularProgress sx={{ marginRight: 1 }} size={18} thickness={2} />
+          )}
           Login With Google
         </Button>
       </CardActions>
